@@ -1,4 +1,17 @@
+const prompt = require('prompt-sync')();
 
+console.log(`==================================================================`);
+console.log(`\n                Seja bem vindo à Aquela Biblioteca\n`);
+console.log(`==================================================================`);
+
+//Login
+let usuario = (prompt(`Digite seu nome de usuário:`));
+let senha = prompt(`Digite sua senha: `);
+
+if (usuario === `Daniel` || usuario === `Matheus` || usuario === `Silas`) {
+  console.log(`==================================================================`);
+  console.log(`\n \n Você possui debitos com a biblioteca! \n \n`);
+}
 /* 1 - Implementar em JavaScript um programa que, a partir da cotação do dólar e do valor em reais, calcula o valor equivalente em dólares.
 No console
 Como um alerta
