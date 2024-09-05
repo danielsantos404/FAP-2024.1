@@ -21,7 +21,7 @@ while (opcao != 9) {
     console.log(`| 1 → Treinar ATAQUE                     |`);
     console.log(`| 2 → Treinar DEFESA                     |`);
     console.log(`| 3 → Mostrar ATRIBUTOS                  |`);
-    console.log(`| 0 → SAIR                               |`);
+    console.log(`| 9 → SAIR                               |`);
     console.log(`x========================================x`);
     opcao = Number(prompt(`Escolha uma opção: `));
     switch (opcao) {
