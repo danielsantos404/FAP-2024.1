@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #adadad;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+a {
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: #dbdbdb;
+}
+
+body {
+    display: flex; /* Usando Flexbox para centralizar a calculadora */
+    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da viewport */
+    background-color: #f4f4f4; /* Cor de fundo */
+    margin: 0; /* Remove margens padrão */
+    height: 93vh;
+}
+
+/* Estilo para o contêiner da calculadora */
+.calculadora {
+    background-color: #000000; /* Cor de fundo da calculadora */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor da calculadora */
+    display: grid; /* Utilizando grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas iguais */
+    grid-gap: 10px; /* Espaço entre as células da grid */
+    width: 300px; /* Largura da calculadora */
+}
+
+/* Estilo do campo de entrada (visor) */
+input {
+    grid-column: span 4; /* O visor ocupa todas as 4 colunas */
+    height: 40px; /* Altura do visor */
+    font-size: 24px; /* Tamanho da fonte */
+    text-align: right; /* Alinha o texto à direita */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #ddd; /* Borda ao redor do visor */
+    border-radius: 5px; /* Cantos arredondados */
+    color: #000000;
+    background-color: #ddd;
+}
+
+/* Estilo para os botões */
+button {
+    width: 100%; /* O botão ocupa 100% da largura da célula da grid */
+    height: 50px; /* Altura dos botões */
+    font-size: 20px; /* Tamanho da fonte nos botões */
+    background-color: #707070; /* Cor de fundo dos botões */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Cantos arredondados nos botões */
+    cursor: pointer; /* Muda o cursor ao passar sobre os botões */
+    transition: background-color 0.3s; /* Transição suave ao mudar a cor de fundo */
+}
+#uc{
+    grid-column: span 4;
+}
+
+/* Cor de fundo ao passar o mouse sobre os botões */
+button:hover {
+    background-color: #ddd;
+}
+
+/* Cor de fundo ao clicar nos botões */
+button:active {
+    background-color: #ccc;
+}

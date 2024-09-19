@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #adadad;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+a {
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+
+a:hover {
+    background-color: #dbdbdb;
+}
+
+body {
+    display: flex; /* Usando Flexbox para centralizar a calculadora */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da viewport */
+    background-color: #f4f4f4; /* Cor de fundo */
+    margin: 0; /* Remove margens padrão */
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #000000; /* Cor de fundo da calculadora */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    color: #ddd;
+}
+
+/* Estilo do campo de entrada (visor) */
+input {
+    height: 40px; /* Altura do visor */
+    font-size: 24px; /* Tamanho da fonte */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #ddd; /* Borda ao redor do visor */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #ddd;
+}
+
+/* Estilo para os botões */
+button {
+    width: 150px;
+    margin: 0 auto;
+    height: 50px;
+    font-size: 20px;
+    background-color: #707070;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cor de fundo ao passar o mouse sobre os botões */
+button:hover {
+    background-color: #ddd;
+}
+
+/* Cor de fundo ao clicar nos botões */
+button:active {
+    background-color: #ccc;
+}
